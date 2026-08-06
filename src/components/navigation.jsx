@@ -5,7 +5,7 @@ import Profil from "../pages/profil";
 
 export default function Navigation() {
   return (
-    <div className="text-white bg-slate-800">
+    <div className="text-white bg-slate-800 shadow-2xl">
       <nav className="flex items-center justify-center gap-10 py-3">
         <Link
           to="/"

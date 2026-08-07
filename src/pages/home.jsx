@@ -1,7 +1,8 @@
-import {Footer} from "../components/footer";
+import { Footer } from "../components/footer";
 import { Bubble } from "../components/bubble/bubble";
 import { Bubble2 } from "../components/bubble/bubble2";
 import ListMovie from "../assets/img/listFilm.png";
+import HeroGif from "../assets/gif/Movie.gif";
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
             {/* Ilustrasi Gambar */}
             <div className="w-full max-w-md">
               <img
-                src={""}
+                src={HeroGif}
                 alt="Movie Illustration"
                 className="rotate h-auto w-full object-cover shadow-2xl shadow-yellow-500/10"
               />

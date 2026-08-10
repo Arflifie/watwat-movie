@@ -5,6 +5,7 @@ import ProfilPhoto from "../assets/img/profil-default.jpg";
 import Home from "../pages/home";
 import Katalog from "../pages/katalog";
 import Profil from "../pages/profil";
+import DetailFilm from "../pages/detailFilm";
 
 export default function Navigation() {
   const [Show, setShow] = useState(false);
@@ -114,6 +115,7 @@ export default function Navigation() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/katalog" element={<Katalog />} />
+        <Route path="/detail/:id" element={<DetailFilm />} />
         <Route path="/profil" element={<Profil />} />
       </Routes>
     </>

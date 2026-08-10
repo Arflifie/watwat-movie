@@ -74,7 +74,7 @@ export function ListFilm() {
   return (
     <div className="w-full">
       {/* 4. FORM SEARCH BAR */}
-      <form onSubmit={(e) => e.preventDefault()} className="mt-10 flex justify-center">
+      <form onSubmit={(e) => e.preventDefault()} className="mt-30 flex justify-center">
         <div className="relative w-80 md:w-96">
           <input
             type="text"

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../assets/react.svg";
 import ProfilPhoto from "../assets/img/profil-default.jpg";
 import Home from "../pages/home";
@@ -111,13 +111,6 @@ export default function Navigation() {
           </nav>
         </div>
       </header>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/katalog" element={<Katalog />} />
-        <Route path="/detail/:id" element={<DetailFilm />} />
-        <Route path="/profil" element={<Profil />} />
-      </Routes>
     </>
   );
 }

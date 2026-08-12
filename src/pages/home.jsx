@@ -1,10 +1,16 @@
 import { Footer } from "../components/footer";
 import { Bubble } from "../components/bubble/bubble";
 import { Bubble2 } from "../components/bubble/bubble2";
+import { Button } from "../components/button";
+import { Link } from "react-router-dom";
 import HeroFilm from "../assets/img/heroFilm.png";
 import HeroGif from "../assets/gif/Movie.gif";
 
 export default function Home() {
+  const searhHandler = () => {
+    return <Link to="/katalog"></Link>;
+  };
+
   return (
     <div className="min-h-screen w-full text-white">
       <section className="relative w-full overflow-hidden bg-linear-to-b from-slate-900 to-slate-700 text-white">
@@ -29,6 +35,13 @@ export default function Home() {
               <p className="mt-4 text-slate-300">
                 Search your favorite movie with enjoyable
               </p>
+              <Button
+                variant="primary"
+                className="mx-auto mt-6 md:mx-0"
+                onClick={searhHandler}
+              >
+                Cari film sekarang
+              </Button>
             </div>
 
             {/* Ilustrasi Gambar */}
@@ -36,7 +49,7 @@ export default function Home() {
               <img
                 src={HeroGif}
                 alt="Movie Illustration"
-                className="rotate h-auto w-full object-cover shadow-2xl shadow-yellow-500/10"
+                className="rotate h-auto w-full object-cover"
               />
             </div>
           </div>

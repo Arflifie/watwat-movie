@@ -11,8 +11,7 @@ export default function DetailFilm() {
   const [isLoading, setIsLoading] = useState(true);
 
   const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
-  const BASE_URL =
-    import.meta.env.VITE_BASE_URL || "https://api.themoviedb.org/3";
+  const BASE_URL = import.meta.env.VITE_BASE_URL;
 
   // 2. Fetch data detail spesifik berdasarkan ID
   useEffect(() => {

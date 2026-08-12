@@ -1,7 +1,7 @@
 import { Footer } from "../components/footer";
 import { Bubble } from "../components/bubble/bubble";
 import { Bubble2 } from "../components/bubble/bubble2";
-import ListMovie from "../assets/img/listFilm.png";
+import HeroFilm from "../assets/img/heroFilm.png";
 import HeroGif from "../assets/gif/Movie.gif";
 
 export default function Home() {

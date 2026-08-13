@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import HeroFilm from "../assets/img/heroFilm.png";
 
 export function ListFilm() {
   const [movies, setMovies] = useState([]);

@@ -24,7 +24,7 @@ export function Footer() {
             <p>Find your favorite movie, rate, and watch</p>
           </div>
 
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-3 mt-20">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-3 mt-20 md:mt-0">
             <div className="flex flex-col gap-4">
               <h3 className="text-xl text-slate-500">Movie</h3>
               <ul className="flex flex-col gap-2 text-slate-300">
@@ -35,14 +35,14 @@ export function Footer() {
             </div>
             <div className="flex flex-col gap-4">
               <h3 className="text-xl text-slate-500">Services</h3>
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-2 text-slate-300">
                 <li>Listing Film</li>
                 <li>Rating</li>
               </ul>
             </div>
             <div className="flex flex-col gap-4">
               <h3 className="text-xl text-slate-500">Contact</h3>
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-2 text-slate-300">
                 <li>Contact</li>
                 <li>About</li>
               </ul>

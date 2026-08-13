@@ -8,7 +8,7 @@ export function Button({
   ...props
 }) {
   const baseStyle =
-    "flex items-center justify-center gap-2 px-4 py-2 rounded-full font-bold transition-all duration-500 active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer";
+    "flex items-center justify-center gap-2 px-4 py-2 rounded-full font-bold transition-all duration-300 active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer";
   const variants = {
     primary: "bg-yellow-400 text-slate-950 hover:bg-yellow-300 shadow-lg",
     secondary:

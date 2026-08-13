@@ -1,11 +1,7 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Logo from "../assets/react.svg";
 import ProfilPhoto from "../assets/img/profil-default.jpg";
-import Home from "../pages/home";
-import Katalog from "../pages/katalog";
-import Profil from "../pages/profil";
-import DetailFilm from "../pages/detailFilm";
 
 export default function Navigation() {
   const [Show, setShow] = useState(false);
@@ -27,24 +23,30 @@ export default function Navigation() {
             </span>
           </p>
           <nav className="flex items-center justify-center gap-10 py-3">
-            <Link
+            <NavLink
               to="/"
-              className="active:shadow-2 rounded-md px-4 py-1 transition-all duration-100 hover:bg-gray-50/10 active:scale-95"
+              className={({ isActive }) =>
+                `${isActive ? "bg-yellow-500 text-slate-800" : "text-white"} active:shadow-2 rounded-md px-4 py-1 transition-all duration-100 hover:bg-gray-50/10 hover:text-white active:scale-95`
+              }
             >
               Home
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/katalog"
-              className="active:shadow-2 rounded-md px-4 py-1 transition-all duration-100 hover:bg-gray-50/10 active:scale-95"
+              className={({ isActive }) =>
+                `${isActive ? "bg-yellow-500 text-slate-800" : "text-white"} active:shadow-2 rounded-md px-4 py-1 transition-all duration-100 hover:bg-gray-50/10 hover:text-white active:scale-95`
+              }
             >
               Katalog
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/profil"
-              className="active:shadow-2 rounded-md px-4 py-1 transition-all duration-100 hover:bg-gray-50/10 active:scale-95"
+              className={({ isActive }) =>
+                `${isActive ? "bg-yellow-500 text-slate-800" : "text-white"} active:shadow-2 rounded-md px-4 py-1 transition-all duration-100 hover:bg-gray-50/10 hover:text-white active:scale-95`
+              }
             >
               Profil
-            </Link>
+            </NavLink>
           </nav>
           <div>
             <img

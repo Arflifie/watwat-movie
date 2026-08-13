@@ -3,14 +3,9 @@ import { Bubble } from "../components/bubble/bubble";
 import { Bubble2 } from "../components/bubble/bubble2";
 import { Button } from "../components/button";
 import { Link } from "react-router-dom";
-import HeroFilm from "../assets/img/heroFilm.png";
-import HeroGif from "../assets/gif/Movie.gif";
+import HeroFilm from "../assets/img/hero-image.webp";
 
 export default function Home() {
-  const searhHandler = () => {
-    return <Link to="/katalog"></Link>;
-  };
-
   return (
     <div className="min-h-screen w-full text-white">
       <section className="relative w-full overflow-hidden bg-linear-to-b from-slate-900 to-slate-700 text-white">
@@ -35,21 +30,32 @@ export default function Home() {
               <p className="mt-4 text-slate-300">
                 Search your favorite movie with enjoyable
               </p>
-              <Button
-                variant="primary"
-                className="mx-auto mt-6 md:mx-0"
-                onClick={searhHandler}
-              >
-                Cari film sekarang
-              </Button>
+              <div className="flex gap-2">
+                <Link to="/Katalog" className="inline-block w-fit">
+                  <Button
+                    variant="primary"
+                    className="mx-auto mt-6 font-medium hover:bg-yellow-500 md:mx-0"
+                  >
+                    Cari film sekarang
+                  </Button>
+                </Link>
+                <Link to="/Katalog" className="inline-block w-fit">
+                  <Button
+                    variant="secondary"
+                    className="mx-auto mt-6 border font-medium md:mx-0"
+                  >
+                    Tentang WatWat
+                  </Button>
+                </Link>
+              </div>
             </div>
 
             {/* Ilustrasi Gambar */}
-            <div className="w-full max-w-md">
+            <div className="relative w-full max-w-2xl">
               <img
-                src={HeroGif}
+                src={HeroFilm}
                 alt="Movie Illustration"
-                className="rotate h-auto w-full object-cover"
+                className="h-auto w-full [mask-image:linear-gradient(to_right,transparent_0%,black_20%,black_80%,transparent_100%)] object-cover md:[mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)]"
               />
             </div>
           </div>
